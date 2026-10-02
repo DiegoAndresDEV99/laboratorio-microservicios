@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  mi-backend:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    expose:
+      - "5000"
+
+  mi-frontend:
+    build:
+      context: ./Frontend
+      dockerfile: dockerfile
+    ports:
+      - "8081:3000"
+    depends_on:
+      - mi-backend
