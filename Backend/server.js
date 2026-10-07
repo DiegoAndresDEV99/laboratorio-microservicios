@@ -8,7 +8,7 @@ app.get('/api/datos', (req, res) => {
     mensaje: "¡Datos enviados con éxito desde el Microservicio de Backend!", 
     servidor: "Contenedor NodeJS - API", 
     fecha: new Date().toISOString(),
-    nombre: "Diego Carmona",
+    nombre: "Diego Carmona, Yarlinson Mosquera, Juan Ruiz",
   }); 
 }); 
  
