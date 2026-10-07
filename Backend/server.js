@@ -6,7 +6,9 @@ const PORT = 5000;
 app.get('/api/datos', (req, res) => { 
   res.json({ 
     mensaje: "¡Datos enviados con éxito desde el Microservicio de Backend!", 
-    servidor: "Contenedor NodeJS - API" 
+    servidor: "Contenedor NodeJS - API", 
+    fecha: new Date().toISOString(),
+    nombre: "Diego Carmona",
   }); 
 }); 
  

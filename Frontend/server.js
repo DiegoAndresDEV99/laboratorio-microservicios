@@ -13,8 +13,12 @@ app.get('/', async (req, res) => {
  <blockquote style="background: #f0f0f0; padding: 15px; border-left: 5px solid
 #007bff;">
  <b>${datos.mensaje}</b> <br> <small>Origen: ${datos.servidor}</small>
+  <p>Fecha de consulta: ${datos.fecha}</p>
+  <p>Nombre: ${datos.nombre}</p>
  </blockquote>
+
  `);
+
  } catch (error) {
  res.send(`<h1>Error al conectar con el Backend</h1><p>${error.message}</p>`);
  }
