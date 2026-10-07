@@ -13,8 +13,9 @@ app.get('/', async (req, res) => {
  <blockquote style="background: #f0f0f0; padding: 15px; border-left: 5px solid
 #007bff;">
  <b>${datos.mensaje}</b> <br> <small>Origen: ${datos.servidor}</small>
-  <p>Fecha de consulta: ${datos.fecha}</p>
   <p>Nombre: ${datos.nombre}</p>
+  <p>Fecha de consulta: ${datos.fecha}</p>
+  <br>Nota:</b> Este mensaje se obtiene desde el Microservicio de Backend, que está corriendo en un contenedor NodeJS y es consumido por el Microservicio de Frontend, también corriendo en un contenedor NodeJS.
  </blockquote>
 
  `);
